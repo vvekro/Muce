@@ -1,0 +1,61 @@
+
+h1{color: rgb(250, 230, 230);
+    font-family: calibri;
+    font-size: 1000%;
+    position: absolute;
+    top: 15%;
+    left: 36%;
+}
+
+h2{color: rgb(250, 230, 230);
+    font-family: calibri;
+    font-size: 300%         ;
+    position: absolute;
+    top: 45%;
+    left: 38%;
+}
+
+
+body {
+        margin: 0;
+     }
+
+.image-grid {
+                --gap: 16px;
+                --num-cols: 4;
+                --row-height: 800px;
+
+                box-sizing: border-box;
+                padding: var(--gap);
+
+                display: grid;
+                grid-template-columns: repeat(var(--num-cols), 1fr);
+                grid-auto-rows: var(--row-height);
+                gap: var(--gap);
+            }
+
+
+
+.fade-in-text {
+                animation: fadeIn 3s;
+              }
+
+@keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+                  }
+
+body, html {
+                height: 100%;
+            }
+
+.parallax {
+                background-image: url(Media/background.jpg);
+                height: 100%; 
+                width: 100%;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+          }
